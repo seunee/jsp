@@ -1,0 +1,33 @@
+package com.ezen.myProject.service;
+
+import javax.inject.Inject;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.ezen.myProject.controller.HomeController;
+import com.ezen.myProject.domain.UserVO;
+import com.ezen.myProject.repository.UserDAO;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class UserServiceImpl implements UserService {
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+
+	
+	@Inject
+	private UserDAO udao;
+	@Inject
+	BCryptPasswordEncoder passwordEncoder;
+
+	@Override
+	public boolean signUp(UserVO user) {
+		
+		return false;
+	}
+	
+}

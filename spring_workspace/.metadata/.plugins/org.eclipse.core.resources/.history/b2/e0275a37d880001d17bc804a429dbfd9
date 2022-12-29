@@ -1,0 +1,25 @@
+package com.ezen.myProject.service;
+
+import javax.inject.Inject;
+
+import org.springframework.stereotype.Service;
+
+import com.ezen.myProject.domain.UserVO;
+import com.ezen.myProject.repository.UserDAO;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class UserServiceImpl implements UserService {
+	
+	@Inject
+	private UserDAO udao;
+
+	@Override
+	public boolean signUp(UserVO user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+}

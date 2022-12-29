@@ -1,0 +1,184 @@
+@font-face {
+    font-family: neo;
+    src: url(font/nanum-square-neo/NanumSquareNeo-bRg.ttf);
+}
+body{
+    text-align: center;
+    box-sizing: border-box;
+    overflow: scroll;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: neo;
+}
+form{
+    width: 93%;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+header{
+    clear: both;
+}
+header #butn{
+    background-color: #2f348f;
+    color: white;
+    float: left;
+    height: 20px;
+    border: none;
+    font-size: 0.7rem;
+}
+#searchI{
+    width: 340px;
+    height: 35px;
+    border: none;
+    text-indent: 15px;
+    font-size: 17px;
+    outline: none;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+#first{
+    position: fixed;
+    border: none;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    transition: all 0.3s ;
+    background-color: #2f348f;
+    color: white;
+    text-align: center;
+}
+.iconBox{
+    width: 150px;
+    float: right;
+    margin-right: 300px;
+}
+#first:hover{
+    bottom: 30px;
+}
+header button{
+    background-color: white;
+    float: right;
+    height: 20px;
+    margin-right: 7px;
+    border: none;
+    font-size: 0.7rem;
+}
+.material-symbols-outlined{
+    color: #2f348f;
+    font-size: 30px;
+}
+
+.favoriteIcon, .cartIcon{
+    float: left;
+}
+
+#searchIcon{
+    /* border: 1px solid black; */
+    color: #2f348f;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 33px;
+}
+form::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#bbb{
+    margin: 0 10% 0 10%;
+    width: 100%;
+    padding: 0 auto;
+}
+a>img{
+    width: 120px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 23%;
+}
+.userBox{
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 350px;
+}
+
+a>span{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+section{
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 auto;
+}
+ul{
+    list-style: none;
+    width: 80%;
+    height: 2rem;
+    margin: 10px ;
+    padding-top: 10px;
+    scrollbar-width: 0;
+}
+li{
+    /* border : 1px solid #2f348f; */
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    display: inline;
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+}
+li:hover{
+    background-color:#2f348f;
+    /* background-color:hsla(237, 59%, 59%, 0.466); */
+    color: white;
+}
+        img{
+            margin:0;
+            width: 75%;
+            height: 50%;
+            
+        }
+        img:hover{
+            transform: scale(1.05,1.05);
+        }
+        #aaa{
+            width: 100%;
+        }
+        #aaa div{
+            width: 280px;
+            margin: 0;
+            padding: 0;
+            float: left;
+            height: 500px;
+        }
+        #porbox{
+            margin: 0;
+            overflow: hidden;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        del{
+            color: gray;
+        }
+        .searchBox{
+            position: relative;
+            border: 1px solid #2f348f;
+            height: 45px;
+            border-radius: 12px;
+            width: 400px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }

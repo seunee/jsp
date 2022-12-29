@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MemberMapper">
+	<select id="list" resultType="mvo">
+		select * from my_member;
+	</select>
+	<insert id="reg" parameterType="mvo">
+		insert into my_member(email, pwd, nick_name)
+		values(#{email}, #{pwd}, #{nick_name})
+	</insert>
+	<select id="login" parameterType="mvo" resultType="mvo">
+		select * from my_member where email=#{email} and pwd=#{pwd}
+	</select>
+	<update id="last" parameterType="String">
+		update my_member set last_login=now() where email=#{email}
+	</update>
+	<select id="detail" parameterType="String" resultType="mvo">
+		select * from my_member where email=#{email}
+	</select>
+	<update id="info" parameterType="mvo">
+		update my_member set pwd=#{pwd}, nick_name=#{nick_name} where email=#{email}
+	</update>
+	<delete id="remove" parameterType="String">
+		delete from my_member where email=#{email}
+	</delete>
+</mapper>

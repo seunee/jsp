@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="CartStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <div class="head">
+            <div class="userBox">
+                <a href="01.login_join.html"><span>로그인</span></a>
+                <a href="08.textjoin.html"><span>회원가입</span></a>
+                <a href="공지사항.html"><span>공지사항</span></a>
+            </div>
+            <header>
+                <a href="Kurly_Main copy.html"><img src="컬리 메인.png" alt=""></a>
+            <div class="searchBox">
+                <input type="text" placeholder="검색창">
+                <span class="material-symbols-outlined" id="searchIcon">
+                    search
+                    </span>
+            </div>
+            <div class="iconBox">
+                <a href="WishList.html">
+                    <span class="material-symbols-outlined" style="font-size: 40px;">
+                        favorite
+                        </span>
+                </a>
+                <a href="Cart_Edit.html">
+                    <span class="material-symbols-outlined" style="font-size: 40px;" >
+                        shopping_cart
+                        </span>
+                </a>
+            </div>
+        </header>
+    </div>
+    <nav id="menuNav">
+        <div class="outerBox">
+            <div></div>
+            <div class="category">카테고리
+                <div class="catMenu">
+                    <div class="vege">채소</div>
+                    <div class="fruit">과일</div>
+                    <div class="fish">수산/해산/건어물</div>
+                    <div class="meat">정육/계란</div>
+                    <div class="mainDish">국/반찬/메인 요리</div>
+                    <div class="noodle">면/양념/오일</div>
+                    <div class="drink">생수/음료/우유/커피</div>
+                    <div class="salad">샐러드/간편식</div>
+                    <div class="sideDish">간식/과자/떡</div>
+                </div>
+            </div>
+            
+            <div class="newItem"><a href="상품목록.html">신상품</a></div>
+            <div class="bestItem"><a href="상품목록.html">베스트</a></div>
+            <div class="saleItem"><a href="상품목록.html">특가</a></div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <article>
+            <table class="table">
+                <thead>
+                    <th>선택</th>
+                    <th>사진</th>
+                    <th>상품명</th>
+                    <th>수량</th>
+                    <th>가격</th>
+                    <th>취소</th>
+                </thead>
+                <tbody>
+                    <tr id="order1">
+                        <td><input type="checkbox" name="checked" class="order1" value="checked"></td>
+                        <td class="productImg">
+                            <img src="https://img-cf.kurly.com/cdn-cgi/image/width=676,format=auto/shop/data/goods/1654752625939l0.jpg" alt="머스크 메론">
+                        </td>
+                        <td class="productName">
+                            <span>[샛별 경매] 머스크 메론 2kg 내외</span>
+                        </td>
+                        <td><button class="btnMinus productNum1">-</button><span id="productNum1">1</span><button class="btnPlus productNum1">+</button></td>
+                        <td class="productNum1Price pPrice">16990 <span>원</span></td>
+                        <td><button class="cancelOrder order1">X</button></td>
+                    </tr>
+                    <tr id="order2">
+                        <td><input type="checkbox" name="checked" class="order2" value="checked"></td>
+                        <td class="productImg">
+                            <img src="https://img-cf.kurly.com/cdn-cgi/image/width=676,format=auto/shop/data/goods/1655775819130l0.jpg" alt="케이준 치킨 샐러드">
+                        </td>
+                        <td class="productName">
+                            <span>[스윗 밸런스] 케이준 치킨 샐러드</span>
+                        </td>
+                        <td><button class="btnMinus productNum2">-</button>
+                            <span id="productNum2">3</span>
+                            <button class="btnPlus productNum2">+</button></td>
+                        <td class="productNum2Price pPrice">14700 <span>원</span></td>
+                        <td><button class="cancelOrder order2">X</button></td>
+                    </tr>
+                    <tr id="order3">
+                        <td><input type="checkbox" name="checked" class="order3" value="checked"></td>
+                        <td class="productImg">
+                            <img src="https://img-cf.kurly.com/cdn-cgi/image/width=676,format=auto/shop/data/goods/1646294153301l0.jpg" alt="국떡 오리지널">
+                        </td>
+                        <td class="productName">
+                            <span>[추억의 국민학교 떡볶이] 국떡 오리지널</span>
+                        </td>
+                        <td><button class="btnMinus productNum3">-</button><span id="productNum3">6</span><button class="btnPlus productNum3">+</button></td>
+                        <td class="productNum3Price pPrice">35400 <span>원</span></td>
+                        <td><button class="cancelOrder order3">X</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="tdCheckAll" colspan="2"> 
+                            <label for="checkAll"><input type="checkbox" id="checkAll" value="selectAll" onclick="checkAll(this)"> 
+                                전체 선택
+                            </label>
+                        </td>
+                        <td ><button class="deleteChecked" onclick="deleteChecked()">선택 삭제</button></td>
+                        <td colspan="3"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <aside>
+                <div class="shippingBox">
+                    <span class="addrTitle">배송지</span>
+                    <p id="addr">인천광역시 남동구 인주대로 593 엔타스빌딩 12층</p>
+                    <button id="searchAddr">배송지 변경</button>
+                </div>
+                <div class="priceBox">
+                    <div class="price">
+                        <span class="title">총 상품 금액</span><span id="priceAll">0</span><span>원</span><br>
+                    </div>
+                    <div class="price">
+                        <span class="title">상품 할인 금액</span><span id="priceDiscount">0</span><span>원</span><br>
+                    </div>
+                    <div class="price">
+                        <span class="title">배송비</span><span id="shippingPrice">0</span><span>원</span><br>
+                    </div>
+                    <div class="price">
+                        <span class="title">결제 예정 금액</span><span id="pricePay">0</span><span>원</span><br>
+                    </div>
+                    <div class="price">
+                        <button id="btnPay">결제하기</button>
+                    </div>
+                </div>
+        </aside>
+    </div>
+    <div class="sectionLine"></div>
+    <footer>
+        <div class="footerAll">
+            <div class="footer_left">
+                <div class="cs_centerName"><h2>고객행복센터</h2></div>
+                <div class="cs_centerTel"><h1>1644-1107</h1><h4>월~토요일 오전7시 - 오후 6시</h4></div>
+                <div class="Btn1">
+                    <button type="button">카카오톡 문의</button>
+                    <p>월~토요일 | 오전7시 - 오후6시</p>
+                    <p>일/공휴일 | 오전7시 - 오후1시</p>
+                </div>
+                <div class="Btn2">
+                    <button type="button">1:1문의</button>
+                    <p>365일</p>
+                    <p>고객센처 운영시간에 순차적으로 답변드리겠습니다.</p>
+                </div>
+                <div class="Btn3">
+                    <button type="button">대량주문 문의</button>
+                    <p>월~토요일 | 오전7시 - 오후6시</p>
+                    <p>점심시간 | 낮12시-오후1시</p>
+                </div>
+                <div class="footer_left_last">
+                    <p>비회원 문의 : help@kurlycorp.com</p>
+                    <p>비회원 대량주문 문의 : kurlygift@kurlycorp.com</p>
+                </div>
+            </div>
+            <div class="footer_right">
+                <div class="footer_right_Top">
+                    <a href="#">컬리소개</a> <a href="#">컬리소개영상</a> <a href="#">인재채용</a>
+                    <a href="#">이용약관</a> <a href="#"><b>개인정보처리방침</b></a> <a href="#">이용안내</a>
+                </div>
+                <div class="footer_right_Mid">
+                    <p>
+                        법인명(상호):주식회사 컬리 | 사업자등록번호:261-81-23567 <a href="#">사업자정보 확인</a>
+                        <br>통신판매업:제 2018-서울강남-01646호 | 개인정보보호책임자:이원준
+                        <br>주소:서울특별시 강남구 테헤란로 133, 18층(역삼동) | 대표이사:김슬아
+                        <br>입점문의:<a href="#">입점문의하기</a> | 제휴문의:<a href="#">business@kurlycorp.com</a>
+                        <br>채용문의:<a href="#">recruit@kurlycorp.com</a>
+                        팩스:070 - 7500 - 6098
+                    </p>
+                </div>
+                <div class="footer_right_last">
+                    <a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="인스타"></a>
+                    <a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="페이스북"></a>
+                    <a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="블로그"></a>
+                    <a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png" alt="포스트"></a>
+                    <a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="유튜브"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const priceAll=document.querySelector('#priceAll');
+        const priceDiscount=document.querySelector('#priceDiscount');
+        const pricePay=document.querySelector('#pricePay');
+        const shippingPrice=document.querySelector('#shippingPrice');
+
+        let checkedArr=[];
+        let cnt=0;
+        
+
+        function calPriceAll(){
+            let price=0;
+            const pPrice=document.querySelectorAll('.pPrice');
+            const checkAll=document.querySelector('#checkAll');
+            if(checkAll.checked==true){
+                priceAll.innerText=0;
+            }else{
+                pPrice.forEach((p)=>{
+                    let proPrice=parseInt(p.innerText);
+                    console.log(cnt)
+                    price+=proPrice;
+                })
+                priceAll.innerText=price;
+
+            }
+           
+        }
+
+        function discount(){
+            let price=parseInt(priceAll.innerText);
+            if(price>=50000){
+                let disPrice=price*0.1;
+                shippingPrice.innerText=0;
+                priceDiscount.innerText=disPrice;
+            }else if(price<50000){                
+                priceDiscount.innerText=0;
+                shippingPrice.innerText=2500;
+                if(price==0){
+                    shippingPrice.innerText=0;
+                }
+            }
+        }
+        
+        function payment(){
+            let allPrice=parseInt(priceAll.innerText);
+            let disPrice=parseInt(priceDiscount.innerText);
+            let shipPrice=parseInt(shippingPrice.innerText);
+
+            pricePay.innerText=allPrice-disPrice+shipPrice;
+        }
+
+        calPriceAll();
+        discount();
+        payment();
+
+        for(const btnP of document.querySelectorAll('.btnPlus')){
+            btnP.addEventListener('click',(e)=>{
+                let className=(e.target.classList[1]);
+                console.log(className);
+                const spanTag=document.querySelector(`#${className}`);
+                const priceTag=document.querySelector(`.${className}Price`);
+                // console.log(priceTag);
+                let productNum=parseInt(spanTag.innerText);
+                let originalPrice=parseInt(priceTag.innerText)/productNum;
+                productNum++;
+                // console.log("원가", originalPrice);
+                let productPrice=originalPrice*productNum;
+                // console.log("총가격", productPrice);
+                spanTag.innerText=productNum;
+                priceTag.innerText=productPrice+" 원";
+                
+                calPriceAll();
+                discount();
+                payment();
+            })
+        }
+        
+        for(const btnM of document.querySelectorAll('.btnMinus')){
+            btnM.addEventListener('click',(e)=>{
+                let className=(e.target.classList[1]);
+                console.log(className);
+                const spanTag=document.querySelector(`#${className}`);
+                const priceTag=document.querySelector(`.${className}Price`);
+                let productNum=parseInt(spanTag.innerText);
+
+                if(productNum==1){
+                    e.disabled=true;
+                }else{
+                    let originalPrice=parseInt(priceTag.innerText)/productNum;
+                    productNum--;
+                    let productPrice=originalPrice*productNum;
+                    spanTag.innerText=productNum;
+                    priceTag.innerText=productPrice+" 원";
+                }
+
+                calPriceAll();
+                discount();
+                payment();
+            })
+        }
+        
+
+
+        for(const od of document.querySelectorAll('.cancelOrder')){
+            od.addEventListener('click',(e)=>{
+                let className=(e.target.classList[1]);
+                deleteOrder(className);
+            })
+        }
+
+        function deleteOrder(id){
+            document.querySelector(`#${id}`).remove();
+            calPriceAll();
+            discount();
+            payment();
+            const tbody=document.querySelector('tbody');
+            const c=document.querySelectorAll('tbody>tr');
+            if(c.length==0){
+                tbody.innerHTML=`<tr class="noOrder"><td class="noOrder" colspan="6">장바구니에 상품이 없어요!</td></tr>
+                <tr class="btnSee"><td colspan="6" class="btnSee"><a href="http://www.naver.com"><button id="seeProduct">상품 구경하기</button></a></td></tr>`
+            }
+        }
+        
+
+        for(const ch of document.querySelectorAll('input[type=checkbox]')){
+            ch.addEventListener('click',(e)=>{
+                if(e.target.checked){
+                    checkedArr.push(e.target.classList.value);
+                    cnt++;
+                }else if(!(e.target.checked)){
+                    let idx=checkedArr.indexOf(e.target.classList.value);
+                    if(idx!=-1){
+                        checkedArr.splice(idx,1);
+                    }
+                }
+                if(cnt==4){
+                    checkedArr.pop();
+                }
+                console.log("체크된 것", cnt, checkedArr)
+            })
+        }
+        
+        function deleteChecked(){
+            console.log(checkedArr);
+            console.log(checkedArr.length);
+            Swal.fire({
+                    title: '선택한 상품을 삭제하시겠습니까?',
+                    icon: 'warning',
+                    fontSize: "1px",
+                    showCancelButton: true, // cancel버튼 보이기. 기본은 원래 없음
+                    confirmButtonColor: '#2f348f', // confrim 버튼 색깔 지정
+                    cancelButtonColor: 'gray', // cancel 버튼 색깔 지정
+                    confirmButtonText: '삭제', // confirm 버튼 텍스트 지정
+                    cancelButtonText: '취소', // cancel 버튼 텍스트 지정                   
+                    reverseButtons: true, // 버튼 순서 거꾸로
+                }).then(result => {
+                    if(result.isConfirmed){
+                        for(let i=0;i<checkedArr.length;i++){
+                            document.querySelector(`#${checkedArr[i]}`).remove();
+                        }
+                        checkedArr.splice(0,cnt);
+                        calPriceAll();
+                        discount();
+                        payment();
+                        const tbody=document.querySelector('tbody');
+                        const c=document.querySelectorAll('tbody>tr');
+                        if(c.length==0){
+                            tbody.innerHTML=`<tr class="noOrder"><td class="noOrder" colspan="6">장바구니에 상품이 없어요!</td></tr>
+                            <tr class="btnSee"><td colspan="6" class="btnSee"><a href="http://www.naver.com"><button id="seeProduct">상품 구경하기</button></a></td></tr>`
+                        }
+                        
+                        Swal.fire({title: '상품이 삭제되었습니다.', confirmButtonColor: '#2f348f', icon:"success"});
+                    }
+                })
+            
+        }
+        
+        function checkAll(selectAll){
+            const boxes=document.querySelectorAll('input[type=checkbox]');
+            boxes.forEach((b)=>{
+                if(b.classList[0]!=undefined){
+                    checkedArr.push(b.classList[0]);
+                }
+                b.checked=selectAll.checked;
+            })
+            cnt=3;
+            console.log("전체 체크:", checkedArr);
+        }
+    </script>
+</body>
+</html>

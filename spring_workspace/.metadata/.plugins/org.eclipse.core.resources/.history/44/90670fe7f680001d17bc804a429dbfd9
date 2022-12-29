@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="false" %>
+
+<jsp:include page="./layout/header.jsp"></jsp:include>
+<h1>
+	Hello world!  
+</h1>
+
+<P> My Spring Project </P>
+
+<jsp:include page="./layout/footer.jsp"></jsp:include>
+	<script type="text/javascript">
+	const msg='<c:out value="${msg}"/>';
+	if(msg==='1'){
+		console.log(msg);
+		alert("로그인 성공!");
+	}
+	if(msg==='0'){
+		alert("로그아웃 성공");
+	}
+	</script>

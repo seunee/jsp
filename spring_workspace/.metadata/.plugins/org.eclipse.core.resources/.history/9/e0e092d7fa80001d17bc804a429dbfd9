@@ -1,0 +1,10 @@
+package com.ezen.myProject.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/brd/*")
+@Controller
+public class BoardController {
+
+}

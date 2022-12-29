@@ -1,0 +1,61 @@
+package com.ezen.myProject.service;
+
+import javax.inject.Inject;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.ezen.myProject.controller.HomeController;
+import com.ezen.myProject.domain.UserVO;
+import com.ezen.myProject.repository.UserDAO;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class UserServiceImpl implements UserService {
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+
+	
+	@Inject
+	private UserDAO udao;
+	@Inject
+	BCryptPasswordEncoder passwordEncoder;
+
+	@Override
+	public boolean signUp(UserVO user) {
+		logger.info(">>> signup check2");
+		//아이디가 중복되면 회원가입 실패
+		//아이디와 일치하는 정보를 DB에서 가져옴
+		UserVO tmpUser=udao.getUser(user.getId());
+		
+		//tmpUser가 null이 아니라면 -> 이미 가입되어 있는 회원 -> 아이디 중복 -> 가입 실패
+		if(tmpUser!=null) {
+			return false;
+		}
+		//아이디가 중복되지 않았다면 -> 회원 가입 진행
+		//아이디 유효성 검사(규칙에 맞는지 체크) -> 규칙에 어긋나면 가입 실패
+		//아이디가 입력이 되었는지만 체크
+		if(user.getId()==null || user.getId().length()==0) {
+			return false;
+		}
+		
+		//비밀번호 유효성 검사
+		if(user.getPw()==null || user.getPw().length()==0) {
+			return false;
+		}
+		
+		//비밀번호 암호화 과정
+		String pw=user.getPw(); //비밀번호 가져와서 담기
+		//encode 사용하면 암호화 가능				원래 비밀번호와 암호화된 비밀번호가 일치하는지 확인 -> matches
+		String encodepw=passwordEncoder.encode(pw); //암호화된 비밀번호
+		user.setPw(encodepw); //암호화된 비밀번호로 설정
+		//회원가입 진행
+		udao.insertUser(user);
+//		int isOk=udao.insertUser(user);
+		return true;
+	}
+	
+}

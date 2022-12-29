@@ -1,0 +1,75 @@
+
+12월 21, 2022 10:01:40.109 NEW SESSION
+12월 21, 2022 10:01:40.110 [3564:8020:1221/100140.108:ERROR:device_event_log_impl.cc(215)] [10:01:40.108] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+12월 21, 2022 10:02:38.35 [3564:9600:1221/100238.035:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 21, 2022 14:34:20.207 [4616:10660:1221/143420.207:ERROR:device_event_log_impl.cc(215)] [14:34:20.206] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+12월 21, 2022 14:35:16.798 [4616:7468:1221/143516.798:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 21, 2022 16:07:32.73 [4616:10660:1221/160732.073:ERROR:device_event_log_impl.cc(215)] [16:07:32.073] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+12월 28, 2022 10:13:40.131 NEW SESSION
+12월 28, 2022 10:13:40.131 [2032:6000:1228/101340.130:ERROR:device_event_log_impl.cc(215)] [10:13:40.130] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+12월 28, 2022 10:14:36.845 [2032:5672:1228/101436.844:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 28, 2022 15:14:36.862 [2032:9052:1228/151436.861:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 28, 2022 17:19:15.569 [1228/171915.563:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\06e6543b-901a-4f5f-896c-a365a6bfaef4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.569 [1228/171915.569:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fd3ab984-6807-4566-9632-459f37c296c4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.569 [1228/171915.569:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\420e11f6-1785-4ae5-ae88-b82431741db9: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.569 [1228/171915.569:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\2f9f7879-c36b-4ad7-91e9-784d5a1dc5ba: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.570 [1228/171915.569:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\41cd6b46-f045-4695-8907-75291db97d8e: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.570 [1228/171915.570:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6d8bb23e-6104-470f-9127-33a7f7fb5dcd: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.570 [1228/171915.570:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1bc9b751-8179-4f34-8dce-9c72f73861c4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.570 [1228/171915.570:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\aed841f9-27a7-421e-9446-4408e3ef735f: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.570 [1228/171915.570:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\81e6cff9-6372-4cc6-86b3-f1386bdb7b13: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.571 [1228/171915.570:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5914aa1e-eacc-4aed-a265-a02133e3d383: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.571 [1228/171915.571:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\b1b36f6d-d80b-4b6a-959b-2243e4ddf36e: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.571 [1228/171915.571:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fa40bde9-6182-4b0a-8098-e38622a24648: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.571 [1228/171915.571:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6348c640-72e9-423c-98f7-ec759f25bec5: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.572 [1228/171915.572:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\06e6543b-901a-4f5f-896c-a365a6bfaef4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.572 [1228/171915.572:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fd3ab984-6807-4566-9632-459f37c296c4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.573 [1228/171915.573:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\420e11f6-1785-4ae5-ae88-b82431741db9: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.573 [1228/171915.573:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\2f9f7879-c36b-4ad7-91e9-784d5a1dc5ba: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.573 [1228/171915.573:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\41cd6b46-f045-4695-8907-75291db97d8e: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.573 [1228/171915.573:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6d8bb23e-6104-470f-9127-33a7f7fb5dcd: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.574 [1228/171915.574:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1bc9b751-8179-4f34-8dce-9c72f73861c4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.574 [1228/171915.574:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\aed841f9-27a7-421e-9446-4408e3ef735f: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.574 [1228/171915.574:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\81e6cff9-6372-4cc6-86b3-f1386bdb7b13: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.575 [1228/171915.575:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5914aa1e-eacc-4aed-a265-a02133e3d383: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.575 [1228/171915.575:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\b1b36f6d-d80b-4b6a-959b-2243e4ddf36e: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.575 [1228/171915.575:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fa40bde9-6182-4b0a-8098-e38622a24648: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:15.575 [1228/171915.575:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6348c640-72e9-423c-98f7-ec759f25bec5: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:19:30.934 [5940:9512:1228/171930.934:ERROR:device_event_log_impl.cc(215)] [17:19:30.934] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+12월 28, 2022 17:20:28.84 [5940:6728:1228/172028.084:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 28, 2022 17:36:26.934 [1228/173626.934:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\06e6543b-901a-4f5f-896c-a365a6bfaef4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.935 [1228/173626.935:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fd3ab984-6807-4566-9632-459f37c296c4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.935 [1228/173626.935:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\420e11f6-1785-4ae5-ae88-b82431741db9: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.935 [1228/173626.935:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\2f9f7879-c36b-4ad7-91e9-784d5a1dc5ba: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.935 [1228/173626.935:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\41cd6b46-f045-4695-8907-75291db97d8e: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.936 [1228/173626.936:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6d8bb23e-6104-470f-9127-33a7f7fb5dcd: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.936 [1228/173626.936:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1bc9b751-8179-4f34-8dce-9c72f73861c4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.936 [1228/173626.936:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\aed841f9-27a7-421e-9446-4408e3ef735f: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.937 [1228/173626.936:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\81e6cff9-6372-4cc6-86b3-f1386bdb7b13: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.937 [1228/173626.937:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5914aa1e-eacc-4aed-a265-a02133e3d383: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.937 [1228/173626.937:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\b1b36f6d-d80b-4b6a-959b-2243e4ddf36e: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.937 [1228/173626.937:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fa40bde9-6182-4b0a-8098-e38622a24648: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.938 [1228/173626.938:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6348c640-72e9-423c-98f7-ec759f25bec5: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.938 [1228/173626.938:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\06e6543b-901a-4f5f-896c-a365a6bfaef4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.939 [1228/173626.939:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fd3ab984-6807-4566-9632-459f37c296c4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.939 [1228/173626.939:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\420e11f6-1785-4ae5-ae88-b82431741db9: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.939 [1228/173626.939:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\2f9f7879-c36b-4ad7-91e9-784d5a1dc5ba: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.939 [1228/173626.939:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\41cd6b46-f045-4695-8907-75291db97d8e: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.939 [1228/173626.939:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6d8bb23e-6104-470f-9127-33a7f7fb5dcd: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.940 [1228/173626.940:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1bc9b751-8179-4f34-8dce-9c72f73861c4: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.940 [1228/173626.940:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\aed841f9-27a7-421e-9446-4408e3ef735f: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.940 [1228/173626.940:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\81e6cff9-6372-4cc6-86b3-f1386bdb7b13: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.940 [1228/173626.940:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5914aa1e-eacc-4aed-a265-a02133e3d383: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.940 [1228/173626.940:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\b1b36f6d-d80b-4b6a-959b-2243e4ddf36e: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.940 [1228/173626.940:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fa40bde9-6182-4b0a-8098-e38622a24648: 지정된 파일을 찾을 수 없습니다. (0x2)
+12월 28, 2022 17:36:26.941 [1228/173626.941:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\ezen\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6348c640-72e9-423c-98f7-ec759f25bec5: 지정된 파일을 찾을 수 없습니다. (0x2)
+
+12월 29, 2022 09:39:55.869 NEW SESSION
+12월 29, 2022 09:39:55.869 [12768:6952:1229/093955.868:ERROR:device_event_log_impl.cc(215)] [09:39:55.868] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+12월 29, 2022 09:40:53.719 [12768:5268:1229/094053.718:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 29, 2022 09:46:54.89 [12768:6952:1229/094654.088:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+12월 29, 2022 09:46:54.89 [12768:6952:1229/094654.088:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+12월 29, 2022 09:46:54.89 [12768:6952:1229/094654.088:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+12월 29, 2022 10:07:59.33 [12768:6952:1229/100759.033:ERROR:device_event_log_impl.cc(215)] [10:07:59.032] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+12월 29, 2022 14:40:53.725 [12768:13160:1229/144053.725:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

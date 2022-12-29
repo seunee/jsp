@@ -1,0 +1,84 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<jsp:include page="../layout/header.jsp"></jsp:include>
+
+	<table border="1">
+		<tr>
+			<th>BNO</th>		
+			<th>TITLE</th>
+			<th>WRITER</th>
+			<th>DATE</th>
+			<th>READ_COUNT</th>
+		</tr>
+		<c:forEach items="${list }" var="bvo">
+			<tr>
+				<td>
+				${bvo.bno }
+				</td>
+				<td><a href="/brd/detail?bno=${bvo.bno }">${bvo.title }</a></td>
+				<td>${bvo.writer }</td>
+				<td>${bvo.registerDate }</td>
+				<td>${bvo.read_count }</td>
+			</tr>
+		</c:forEach>
+	</table>
+
+	<div>
+		<c:if test="${pgh.prev }">
+			<a href="/brd/list?pageNo=${pgh.startPage-1 }&qty=${pgh.pgvo.qty }">◀</a>
+		</c:if>
+		<c:forEach begin="${pgh.startPage }" end="${pgh.endPage }" var="i" >
+			<a href="/brd/list?pageNo=${i }&qty=${pgh.pgvo.qty}">${i } ｜ </a>
+		</c:forEach>
+
+		<c:if test="${pgh.next }">
+			<a href="/brd/list?pageNo=${pgh.endPage+1 }&qty=${pgh.pgvo.qty }">▶</a>
+		</c:if>
+	</div>
+		<a href="/"><button>HOME</button></a>
+		<a href="/brd/register"><button>글쓰기</button></a>
+	<div class="col-sm-12 col-md-6">
+	<form action="/brd/list" method="get">
+		<div class="input-group mb-3">
+		<c:set value="${pgh.pgvo.type }" var="typed"/>
+			<select class="form-select" name="type">
+				<option ${typed==null ? 'selected':''}>선택</option>
+				<option value="t" ${typed eq 't' ? 'selected':'' }>제목</option>
+				<option value="c" ${typed eq 'c' ? 'selected':'' }>내용</option>
+				<option value="w" ${typed eq 'w' ? 'selected':'' }>작성자</option>
+			</select>
+			<input class="form-control" type="text" name="keyword" placeholder="Search" value=${pgh.pgvo.keyword }>
+			<input type="hidden" name="pageNo" value="1">
+  			<input type="hidden" name="qty" value="${pgh.pgvo.qty }">
+  			<button type="submit">
+  				Search
+  				<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+    		${pgh.totalCount }
+
+    		<span class="visually-hidden">unread messages</span></span>
+
+  			</button>
+
+		</div>
+
+	</form>
+
+	</div>
+	
+<jsp:include page="../layout/footer.jsp"></jsp:include>
+<script type="text/javascript">
+	const msg='<c:out value="${msg}"/>';
+	if(msg==='0'){
+		console.log(msg);
+		alert("게시글 등록!");
+	}else if(msg==='1'){
+		alert("게시글 등록에 실패했습니다.");
+	}else if(msg==='3'){
+		alert("게시글 삭제에 성공했습니다.");
+	}else if(msg==='4'){
+		alert("게시글 삭제에 실패했습니다.");
+	}
+	</script>

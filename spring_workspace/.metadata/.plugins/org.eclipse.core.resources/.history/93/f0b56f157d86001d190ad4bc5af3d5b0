@@ -1,0 +1,124 @@
+package com.ezen.myProject.service;
+
+import java.util.List;
+
+import javax.inject.Inject;
+
+import org.springframework.stereotype.Service;
+
+import com.ezen.myProject.domain.BoardDTO;
+import com.ezen.myProject.domain.BoardVO;
+import com.ezen.myProject.domain.FileVO;
+import com.ezen.myProject.domain.PagingVO;
+import com.ezen.myProject.domain.UserVO;
+import com.ezen.myProject.repository.BoardDAO;
+import com.ezen.myProject.repository.FileDAO;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class BoardServiceImpl implements BoardService {
+	@Inject
+	private BoardDAO bdao;
+	@Inject
+	private FileDAO fdao;
+
+	@Override
+	public int register(BoardVO bvo) {
+		log.info("board register check2");
+		return bdao.insertBoard(bvo);
+	}
+
+	@Override
+	public List<BoardVO> getList() {
+		log.info("board list check2");
+		return bdao.selectBoardList();
+	}
+
+	@Override
+	public BoardVO getDetail(int bno) {
+		log.info("board detail check2");
+		
+		return bdao.selectBoardDetail(bno);
+	}
+
+	@Override
+	public int updateReadCount(int bno) {
+		log.info("board readcount check2");
+		return bdao.updateReadCount(bno);
+	}
+
+	@Override
+	public int modifyBoard(BoardVO bvo, UserVO user) {
+		log.info("board modify check2");
+		BoardVO tmpBoard=bdao.selectBoardDetail(bvo.getBno());
+		if(user == null || !user.getId().equals(tmpBoard.getWriter())) {
+			return 0;
+		}
+		return bdao.updateBoard(bvo);
+	}
+
+	@Override
+	public int removeBoard(int bno) {
+		log.info("board remove check2");
+		return bdao.deleteBoard(bno);
+	}
+
+	@Override
+	public List<BoardVO> getList(PagingVO pvo) {
+		log.info("paging list check2");
+		return bdao.selectBoardListPaing(pvo);
+	}
+
+	@Override
+	public int getListCount() {
+		return bdao.selectListCount();
+	}
+
+	@Override
+	public int getSearchCount(PagingVO pgvo) {
+		// TODO Auto-generated method stub
+		return bdao.selectSeachCount(pgvo);
+	}
+
+	@Override
+	public int register(BoardDTO bdto) {
+		log.info("board register(bdto) check2");
+		int isOk=bdao.insertBoard(bdto.getBvo()); //기존 게시글에 대한 내용을 db에 저장 
+		if(isOk>0 && bdto.getFList().size()>0) {
+			//방금 넣었던 bvo 객체가 db에 저장이 된 후 가장 큰 bno 가져오기
+			int bno=bdao.selectOneBno();
+			for(FileVO fvo:bdto.getFList()) {
+				fvo.setBno(bno);
+				log.info(">>>>file: "+fvo.toString());
+				isOk*=fdao.insertFile(fvo);
+			}
+		}
+		return isOk;
+	}
+
+	@Override
+	public BoardDTO getDetailFile(int bno) {
+		BoardDTO bdto=new BoardDTO(bdao.selectBoardDetail(bno), fdao.selectFileList(bno));
+		return bdto;
+	}
+
+	@Override
+	public int modifyBoard(BoardDTO bdto, UserVO user) {
+		BoardVO tmpBoard=bdao.selectBoardDetail(bdto.getBvo().getBno());
+		if(user == null || !user.getId().equals(tmpBoard.getWriter())) {
+			return 0;
+		}
+		int isOk=bdao.updateBoard(bdto.getBvo());
+		if(isOk>0 && bdto.getFList().size()>0) {
+			int bno=bdao.selectOneBno();
+			for(FileVO fvo:bdto.getFList()) {
+				fvo.setBno(bno);
+				isOk*=fdao.insertFile(fvo);
+			}
+		}
+		return isOk;
+	}
+	
+}

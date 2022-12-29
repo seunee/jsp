@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@font-face {
+    font-family: puddles;
+    src: url(/font/RubikPuddles-Regular.ttf);
+}
+@font-face {
+    font-family: fredoka;
+    src: url(/font/FredokaOne-Regular.ttf);
+}
+@font-face{
+	font-family: neoRe;
+	src: url(/font/NanumSquareNeo-bRg.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	margin: auto;
+	display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+table{
+    width: 1000px;
+    border: 1px dashed rgb(183, 183, 183);
+    border-radius: 10px;
+}
+tr{
+	border-bottom: 1px dashed rgb(183, 183, 183);
+}
+
+th{
+    width: 15%;
+    border-right: 1px dashed rgb(183, 183, 183);
+    color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+textarea{
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+}
+td{
+    text-align: center;
+}
+
+a>button{
+    width: 120px;
+	height: 40px;
+	border: none;
+	border-radius: 8px;
+	background-color: black;
+	color: white;
+	font-weight: 700;
+	font-size: 1.2em;
+    /* float: right; */
+    font-family: puddles;
+}
+
+
+img{
+    width: 150px;
+}
+section{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: fredoka;
+}
+.head_title{
+    font-size: 70px;
+}
+.head_comment{
+    font-size: 1.3em;
+    height: 40px;
+}
+.head_container>img{
+	width: 150px;
+}
+.head_container{
+	display: flex;
+	align-items: center;
+}
+.col_td{
+    border: 1px solid black;
+}
+.btnBox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+}
+
+.commentBox{
+    width: 1000px;
+    margin-top: 30px;
+    height: 100px;
+    border: 1px dashed rgb(183, 183, 183);
+    border-bottom: none;
+    border-radius: 10px;
+    
+}
+
+#cmtAddBtn{
+    background-color: white;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 8px;
+    color: black;
+    width: 80px;
+    height: 30px;
+    font-family: fredoka;
+}
+#cmtWriter{
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: neoRe;
+}
+
+#cmtText{
+    width: 85%;
+    height: 35px;
+    margin: 0;
+    font-family: neoRe;
+}
+
+.commentInner{
+    display: flex;
+    justify-content: space-around;
+}
+
+#commentList{
+    width: 1000px;
+    font-family: neoRe;
+}
+#commentList tr th:nth-of-type(1){width: 20%;}
+#commentList tr th:nth-of-type(2){width: 45%;}
+#commentList tr th:nth-of-type(3){width: 20%;}
+#commentList tr th:nth-of-type(4){width: 15%;    border-right: none;}
+
+#commentList th{
+    border-bottom: 1px dashed rgb(183, 183, 183); 
+}
+
+.border_right{
+    border-right: 1px dashed rgb(183, 183, 183);
+}
+
+.cmtEditBtn, .cmtDelBtn{
+    background-color: white;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 2px;
+    color: black;
+    font-family: fredoka;
+}
+
+#cmtArea{
+    border: none;
+    font-family: neoRe;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    /* margin: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    font-family: puddles;
+    position: sticky;
+    top: 0;
+}
+.logoBox>a>img{
+    /* margin-top: 10px; */
+    width: 60px;
+    margin-left: 20px;
+}
+.head_ul{
+    float: right;
+    /* height: 100%; */
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.head_li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+.head_li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.head_li:hover{
+    transform: scale(1.2);
+}
+/* .head_li a:hover{
+    color: black;
+
+} */
+.lastli::after{
+    clear: both;
+}
+.login_ul{
+	width: 580px;
+}
+section, table, .commentBox{
+	font-family: fredoka, neoRe;
+}

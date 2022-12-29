@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="./layout/header.jsp"></jsp:include>
+	<form action="/mem/register" method="post">
+		EMAIL: <input type="text" name="id"> <br>
+		PASSWORD: <input type="text" name="pw"> <br>
+		AGE: <input type="text" name="age"> <br>
+		<button type="submit">SIGN UP</button>
+	</form>
+<!-- 	<script type="text/javascript">
+	const msg_reg='<c:out value="${msg_reg}" />';
+	if(msg_reg==='0'){
+		alert("이메일과 닉네임이 중복입니다.");
+	}else if(msg_reg==='1'){
+		alert("이메일이 중복입니다.");
+	}else if(msg_reg==='2'){
+		alert("닉네임이 중복입니다.");
+	}
+	</script> -->
+<jsp:include page="./layout/footer.jsp"></jsp:include>

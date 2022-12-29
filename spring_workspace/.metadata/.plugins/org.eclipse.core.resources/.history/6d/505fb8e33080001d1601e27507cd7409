@@ -1,0 +1,19 @@
+create table board(
+bno int not null auto_increment,
+title varchar(200),
+content text,
+writer varchar(100),
+isDel varchar(50) default "N",
+registerDate datetime default now(),
+read_count int,
+primary key(bno));
+
+
+create table user(
+id varchar(100) not null,
+pw varchar(100) not null, 
+age int, 
+name varchar(100),
+email varchar(100),
+home varchar(100),
+primary key(id));
